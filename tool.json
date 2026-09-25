@@ -1,0 +1,203 @@
+{
+  "tool": {
+    "id": "indice-tornozelo-braquial",
+    "title": "Índice tornozelo-braquial (ITB)",
+    "short": "Doença arterial periférica",
+    "spec": [
+      "angiologia",
+      "cirurgia-vascular",
+      "cardiologia"
+    ],
+    "tier": 1,
+    "desc": "Calcule o índice tornozelo-braquial de cada perna a partir das pressões braquiais e do tornozelo, com a classificação de doença arterial periférica.",
+    "lead": "Calcula o ITB de cada perna e classifica a doença arterial obstrutiva periférica (DAOP).",
+    "fields": [
+      [
+        "bd",
+        "PAS braço direito",
+        "num",
+        {
+          "min": 50,
+          "max": 300,
+          "unit": "mmHg",
+          "ph": "130"
+        }
+      ],
+      [
+        "be",
+        "PAS braço esquerdo",
+        "num",
+        {
+          "min": 50,
+          "max": 300,
+          "unit": "mmHg",
+          "ph": "128"
+        }
+      ],
+      [
+        "td",
+        "Maior PAS do tornozelo direito (tibial posterior ou pediosa)",
+        "num",
+        {
+          "min": 0,
+          "max": 350,
+          "unit": "mmHg",
+          "ph": "140"
+        }
+      ],
+      [
+        "te",
+        "Maior PAS do tornozelo esquerdo (tibial posterior ou pediosa)",
+        "num",
+        {
+          "min": 0,
+          "max": 350,
+          "unit": "mmHg",
+          "ph": "135"
+        }
+      ]
+    ],
+    "formula": "<p>ITB de cada perna = maior pressão sistólica daquele tornozelo ÷ maior pressão sistólica braquial (entre os dois braços). O ITB do paciente é o menor dos dois lados.</p>",
+    "table": [
+      [
+        "ITB",
+        "Interpretação"
+      ],
+      [
+        "&gt; 1,40",
+        "Artérias não compressíveis (calcificadas): resultado não confiável"
+      ],
+      [
+        "1,00 a 1,40",
+        "Normal"
+      ],
+      [
+        "0,91 a 0,99",
+        "Limítrofe"
+      ],
+      [
+        "0,70 a 0,90",
+        "DAOP leve"
+      ],
+      [
+        "0,40 a 0,69",
+        "DAOP moderada"
+      ],
+      [
+        "&lt; 0,40",
+        "DAOP grave (isquemia crítica)"
+      ]
+    ],
+    "tips": [
+      "Paciente em decúbito dorsal por 5 a 10 minutos; manguito 2 a 3 cm acima do maléolo; Doppler vascular portátil para as pressões do tornozelo.",
+      "ITB ≤ 0,90 tem sensibilidade de ~75% e especificidade de ~90% para estenose ≥ 50%, e é marcador de alto risco cardiovascular.",
+      "ITB &gt; 1,40 (diabéticos, renais crônicos, idosos): use o índice hálux-braquial (normal &gt; 0,70).",
+      "ITB normal em repouso com claudicação típica: repita após exercício (queda &gt; 20% sugere DAOP)."
+    ],
+    "sources": [
+      [
+        "Aboyans V et al. Measurement and interpretation of the ankle-brachial index: a scientific statement from the American Heart Association. Circulation, 2012.",
+        "https://doi.org/10.1161/CIR.0b013e318276fbcb"
+      ],
+      [
+        "Gerhard-Herman MD et al. 2016 AHA/ACC Guideline on the Management of Patients With Lower Extremity Peripheral Artery Disease. Circulation, 2017.",
+        "https://doi.org/10.1161/CIR.0000000000000471"
+      ]
+    ],
+    "cases": [
+      [
+        "Braços 130/128, tornozelos 117/140: ITB 0,90 (DAOP leve) e 1,08",
+        {
+          "bd": 130,
+          "be": 128,
+          "td": 117,
+          "te": 140
+        },
+        {
+          "raw": {
+            "right": 0.9,
+            "left": 1.0769
+          },
+          "tol": 0.001,
+          "verdict": "leve"
+        }
+      ],
+      [
+        "Tornozelo 180 com braço 120: ITB > 1,40, não compressível",
+        {
+          "bd": 120,
+          "be": 120,
+          "td": 180,
+          "te": 130
+        },
+        {
+          "verdict": "não compressíveis",
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "cardiologia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cardiotoracica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cardiologia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 2,
+      "passed": 2,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 2,
+      "passed": 2,
+      "cases": [
+        {
+          "label": "Usa o maior braço como denominador",
+          "input": {
+            "bd": 100,
+            "be": 120,
+            "td": 120,
+            "te": 60
+          },
+          "expected": {
+            "right": 1,
+            "left": 0.5
+          },
+          "status": "passed",
+          "failures": []
+        },
+        {
+          "label": "Escala comum das pressões preserva razão",
+          "input": {
+            "bd": 200,
+            "be": 240,
+            "td": 240,
+            "te": 120
+          },
+          "expected": {
+            "right": 1,
+            "left": 0.5
+          },
+          "status": "passed",
+          "failures": []
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cardiologia.php",
+    "sha256": "ed536451dd02922a7f840f2c9ce575be004cddb227f60426b7a52cf1b0e94ec0",
+    "bytes": 61303
+  },
+  "clinicalValidation": "not-performed"
+}

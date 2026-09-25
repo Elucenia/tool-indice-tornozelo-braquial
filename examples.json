@@ -1,0 +1,46 @@
+[
+  {
+    "label": "Braços 130/128, tornozelos 117/140: ITB 0,90 (DAOP leve) e 1,08",
+    "input": {
+      "bd": 130,
+      "be": 128,
+      "td": 117,
+      "te": 140
+    },
+    "expected": {
+      "raw": {
+        "right": 0.9,
+        "left": 1.0769
+      },
+      "tol": 0.001,
+      "verdict": "leve"
+    },
+    "originalInput": {
+      "bd": 130,
+      "be": 128,
+      "td": 117,
+      "te": 140
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Tornozelo 180 com braço 120: ITB > 1,40, não compressível",
+    "input": {
+      "bd": 120,
+      "be": 120,
+      "td": 180,
+      "te": 130
+    },
+    "expected": {
+      "verdict": "não compressíveis",
+      "level": "high"
+    },
+    "originalInput": {
+      "bd": 120,
+      "be": 120,
+      "td": 180,
+      "te": 130
+    },
+    "expandedZeroOptions": []
+  }
+]
