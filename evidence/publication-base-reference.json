@@ -1,0 +1,88 @@
+{
+  "id": "indice-tornozelo-braquial",
+  "repository": "Elucenia/tool-indice-tornozelo-braquial",
+  "branch": "main",
+  "commit": "421ea4ac662b407994ec4d914060f856da33f031",
+  "archiveSha256": "08946ee8b2019307dbfd92da8e25f1a4f7a76cee59c3ffa175223cd123e784f0",
+  "protectedFiles": [
+    {
+      "path": ".gitattributes",
+      "type": "blob",
+      "mode": "100644",
+      "size": 19,
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "blob",
+      "mode": "100644",
+      "size": 279,
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "mode": "100644",
+      "size": 42,
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+    },
+    {
+      "path": "AUTHORSHIP.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 3337,
+      "sha": "94c6c64b51b3e1789cf04ae15abbdf30105645e9",
+      "sha256": "b57fe80923c14a5d071e55f1e9236bf5ce677398a68e14d0b2392447b42bb7c3"
+    },
+    {
+      "path": "CITATION.cff",
+      "type": "blob",
+      "mode": "100644",
+      "size": 944,
+      "sha": "7835c69125d40c487ed615b7fdf06c7b093cd4ef",
+      "sha256": "39d8b5cf140c0fe749a947e5e821d523e072e61b2c35a12fe28d089d68573714"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1476,
+      "sha": "05dfe5b548901508c002e31f11a3f3fcee6a045b",
+      "sha256": "0e11fa42fc2b78ed8ad3c33ad9cbba5186f99a5f7eef263ea11cb769953648d9"
+    },
+    {
+      "path": "LICENSE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 11358,
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1660,
+      "sha": "a51a49bcb85ab66de5c3076cd4c679bce9709917",
+      "sha256": "a35a1c995c980a5300d2dda8cad8404cad82296ff482f1bcb6b56801153c8472"
+    },
+    {
+      "path": "SECURITY.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 894,
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+    }
+  ],
+  "receipt": {
+    "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+    "bytes": 6066154,
+    "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+  },
+  "remoteCodeExecuted": false,
+  "freshBranchReadRequiredBeforePublication": true
+}

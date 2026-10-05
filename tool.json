@@ -3,14 +3,14 @@
     "id": "indice-tornozelo-braquial",
     "title": "Índice tornozelo-braquial (ITB)",
     "short": "Doença arterial periférica",
+    "desc": "Calcule o índice tornozelo-braquial de cada perna a partir das pressões braquiais e do tornozelo, com a classificação de doença arterial periférica.",
+    "lead": "Calcula o ITB de cada perna e classifica a doença arterial obstrutiva periférica (DAOP).",
+    "kind": "Calculadora",
     "spec": [
       "angiologia",
       "cirurgia-vascular",
       "cardiologia"
     ],
-    "tier": 1,
-    "desc": "Calcule o índice tornozelo-braquial de cada perna a partir das pressões braquiais e do tornozelo, com a classificação de doença arterial periférica.",
-    "lead": "Calcula o ITB de cada perna e classifica a doença arterial obstrutiva periférica (DAOP).",
     "fields": [
       [
         "bd",
@@ -58,42 +58,6 @@
       ]
     ],
     "formula": "<p>ITB de cada perna = maior pressão sistólica daquele tornozelo ÷ maior pressão sistólica braquial (entre os dois braços). O ITB do paciente é o menor dos dois lados.</p>",
-    "table": [
-      [
-        "ITB",
-        "Interpretação"
-      ],
-      [
-        "&gt; 1,40",
-        "Artérias não compressíveis (calcificadas): resultado não confiável"
-      ],
-      [
-        "1,00 a 1,40",
-        "Normal"
-      ],
-      [
-        "0,91 a 0,99",
-        "Limítrofe"
-      ],
-      [
-        "0,70 a 0,90",
-        "DAOP leve"
-      ],
-      [
-        "0,40 a 0,69",
-        "DAOP moderada"
-      ],
-      [
-        "&lt; 0,40",
-        "DAOP grave (isquemia crítica)"
-      ]
-    ],
-    "tips": [
-      "Paciente em decúbito dorsal por 5 a 10 minutos; manguito 2 a 3 cm acima do maléolo; Doppler vascular portátil para as pressões do tornozelo.",
-      "ITB ≤ 0,90 tem sensibilidade de ~75% e especificidade de ~90% para estenose ≥ 50%, e é marcador de alto risco cardiovascular.",
-      "ITB &gt; 1,40 (diabéticos, renais crônicos, idosos): use o índice hálux-braquial (normal &gt; 0,70).",
-      "ITB normal em repouso com claudicação típica: repita após exercício (queda &gt; 20% sugere DAOP)."
-    ],
     "sources": [
       [
         "Aboyans V et al. Measurement and interpretation of the ankle-brachial index: a scientific statement from the American Heart Association. Circulation, 2012.",
@@ -102,6 +66,10 @@
       [
         "Gerhard-Herman MD et al. 2016 AHA/ACC Guideline on the Management of Patients With Lower Extremity Peripheral Artery Disease. Circulation, 2017.",
         "https://doi.org/10.1161/CIR.0000000000000471"
+      ],
+      [
+        "AHA/ACC2024 lower-extremity PAD guideline",
+        "https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001251"
       ]
     ],
     "cases": [
@@ -136,9 +104,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -151,44 +116,168 @@
       "testedAt": "2026-09-25",
       "total": 2,
       "passed": 2,
-      "cases": [
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "AHA 2012:ITBmaior PAS tornozelo/maior PASbraquial; menor ITB entre pernas",
+    "implementationVersion": "indice-tornozelo-braquial@native-2026-10-03+547a7ab06ea9",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/23159553/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "ITB de cada perna = maior pressão sistólica daquele tornozelo ÷ maior pressão sistólica braquial (entre os dois braços). O ITB do paciente é o menor dos dois lados.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "bd",
+            "label": "PAS braço direito",
+            "type": "num",
+            "min": 50,
+            "max": 300,
+            "unit": "mmHg",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "be",
+            "label": "PAS braço esquerdo",
+            "type": "num",
+            "min": 50,
+            "max": 300,
+            "unit": "mmHg",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "td",
+            "label": "Maior PAS do tornozelo direito (tibial posterior ou pediosa)",
+            "type": "num",
+            "min": 0,
+            "max": 350,
+            "unit": "mmHg",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "te",
+            "label": "Maior PAS do tornozelo esquerdo (tibial posterior ou pediosa)",
+            "type": "num",
+            "min": 0,
+            "max": 350,
+            "unit": "mmHg",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "d6faf0c550dd00b77c1dc0ba18e6173058c740ce8b59949e40fb704b80182348"
+      },
+      "sourceEditions": [
         {
-          "label": "Usa o maior braço como denominador",
-          "input": {
-            "bd": 100,
-            "be": 120,
-            "td": 120,
-            "te": 60
+          "citation": "Aboyans V et al. Measurement and interpretation of the ankle-brachial index: a scientific statement from the American Heart Association. Circulation, 2012.",
+          "url": "https://doi.org/10.1161/CIR.0b013e318276fbcb",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Measurement and interpretation of the ankle-brachial index: a scientific statement from the American Heart Association.",
+            "year": "2012",
+            "firstPublicationDate": "2012-11-16",
+            "doi": "10.1161/cir.0b013e318276fbcb",
+            "pmid": "23159553",
+            "journal": "Circulation",
+            "authors": "Aboyans V, Criqui MH, Abraham P, Allison MA, Creager MA, Diehm C, Fowkes FG, Hiatt WR, Jönsson B, Lacroix P, Marin B, McDermott MM, Norgren L, Pande RL, Preux PM, Stoffers HE, Treat-Jacobson D, American Heart Association Council on Peripheral Vascular Disease, Council on Epidemiology and Prevention, Council on Clinical Cardiology, Council on Cardiovascular Nursing, Council on Cardiovascular Radiology and Intervention, and Council on Cardiovascular Surgery and Anesthesia."
           },
-          "expected": {
-            "right": 1,
-            "left": 0.5
-          },
-          "status": "passed",
-          "failures": []
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/23159553/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
         },
         {
-          "label": "Escala comum das pressões preserva razão",
-          "input": {
-            "bd": 200,
-            "be": 240,
-            "td": 240,
-            "te": 120
+          "citation": "Gerhard-Herman MD et al. 2016 AHA/ACC Guideline on the Management of Patients With Lower Extremity Peripheral Artery Disease. Circulation, 2017.",
+          "url": "https://doi.org/10.1161/CIR.0000000000000471",
+          "class": "primary-publication-full-text-retrieved",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": true,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "2016 AHA/ACC Guideline on the Management of Patients With Lower Extremity Peripheral Artery Disease: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines.",
+            "year": "2017",
+            "firstPublicationDate": "2016-11-13",
+            "doi": "10.1161/cir.0000000000000471",
+            "pmid": "27840333",
+            "pmcid": "PMC5477786",
+            "journal": "Circulation",
+            "authors": "Gerhard-Herman MD, Gornik HL, Barrett C, Barshes NR, Corriere MA, Drachman DE, Fleisher LA, Fowkes FG, Hamburg NM, Kinlay S, Lookstein R, Misra S, Misra S, Mureebe L, Olin JW, Patel RA, Regensteiner JG, Schanzer A, Shishehbor MH, Stewart KJ, Treat-Jacobson D, Walsh ME."
           },
-          "expected": {
-            "right": 1,
-            "left": 0.5
-          },
-          "status": "passed",
-          "failures": []
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5477786/",
+          "abstractAvailable": false,
+          "fullTextSha256": "923a0339a04cea4f82df3d278531502804221abbfa9cda83aea5ad2caa97f0d9",
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
         }
-      ]
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-09-25",
+        "total": 2,
+        "passed": 2,
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "547a7ab06ea9a2cc8f61bcb6fa1aa3669009bf91f7f0ededb9f645a698cb80b6"
+    },
+    "limits": "Calcule cada perna com a maior pressão sistólica do tornozelo daquele lado e a maior pressão dos dois braços; não use uma média dessas pressões. Artérias não compressíveis, frequentes em diabetes e doença renal crônica, podem elevar falsamente o índice e exigir avaliação adicional. Um valor de repouso normal não exclui toda isquemia, e o índice isolado pode ser insuficiente na isquemia crônica ameaçadora do membro. A ferramenta não substitui técnica adequada de medida, sintomas, exame vascular ou testes complementares.",
+    "limitsEvidence": {
+      "status": "primary-publisher-indexed-measurement-and-limitations-section-read",
+      "sources": [
+        {
+          "url": "https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001251",
+          "edition": "AHA/ACC2024 lower-extremity PAD guideline",
+          "readScope": "Primary publisher-indexed section3.1/supportive text and Figure2 wording: higher ipsilateral ankle/higher bilateral brachial pressures, noncompressibility/DM/CKD and limitations in CLTI. Direct opening failed; not entire guideline."
+        },
+        {
+          "url": "https://doi.org/10.1161/CIR.0b013e318276fbcb",
+          "edition": "AHA2012 scientific statement",
+          "readScope": "Identity only; full original statement not read."
+        }
+      ],
+      "populationScope": "Resting ankle/brachial systolic-pressure ratio; noncompressible arteries can invalidate pressure interpretation.",
+      "remainingChecks": [
+        "Primary2024 section read through indexing; direct full opening failed.",
+        "Original2012 full statement not read.",
+        "No patient Doppler acquisition or clinical diagnosis validation."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/indice-tornozelo-braquial/calculator.js",
+    "bytes": 5470,
+    "sha256": "547a7ab06ea9a2cc8f61bcb6fa1aa3669009bf91f7f0ededb9f645a698cb80b6"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "bb69e2d7d9159c7fd36f9146a9b4a5e3b32096a3fecee2bf918b320e43ad9086",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 2,
+      "sha256": "ab85fe908a4f258d11421b4936b8a867384888d29fdf976adf0909020e3e554a",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 2,
+      "sha256": "ab85fe908a4f258d11421b4936b8a867384888d29fdf976adf0909020e3e554a",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

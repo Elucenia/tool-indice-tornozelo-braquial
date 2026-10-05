@@ -1,0 +1,208 @@
+{
+  "id": "indice-tornozelo-braquial",
+  "at": "2026-10-05T17:29:52.018Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/indice-tornozelo-braquial/calculator.js",
+    "bytes": 5470,
+    "sha256": "547a7ab06ea9a2cc8f61bcb6fa1aa3669009bf91f7f0ededb9f645a698cb80b6"
+  },
+  "cases": [
+    {
+      "name": "Braços 130/128, tornozelos 117/140: ITB 0,90 (DAOP leve) e 1,08",
+      "input": {
+        "bd": 130,
+        "be": 128,
+        "td": 117,
+        "te": 140
+      },
+      "obtained": {
+        "id": "indice-tornozelo-braquial",
+        "main": [
+          "0,90",
+          ""
+        ],
+        "label": "ITB (menor dos dois lados)",
+        "raw": {
+          "right": 0.9,
+          "left": 1.0769230769230769
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.right",
+          "expected": 0.9,
+          "obtained": 0.9,
+          "tolerance": 0.001,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.left",
+          "expected": 1.0769,
+          "obtained": 1.0769230769230769,
+          "tolerance": 0.001,
+          "difference": 0.000023076923076903455,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.right",
+          "expected": 0.9,
+          "obtained": 0.9,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.left",
+          "expected": 1.0769230769230769,
+          "obtained": 1.0769230769230769,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "0,90",
+          "obtained": "0,90",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Tornozelo 180 com braço 120: ITB > 1,40, não compressível",
+      "input": {
+        "bd": 120,
+        "be": 120,
+        "td": 180,
+        "te": 130
+      },
+      "obtained": {
+        "id": "indice-tornozelo-braquial",
+        "main": [
+          "1,08",
+          ""
+        ],
+        "label": "ITB (menor dos dois lados)",
+        "raw": {
+          "right": 1.5,
+          "left": 1.0833333333333333
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.right",
+          "expected": 1.5,
+          "obtained": 1.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.left",
+          "expected": 1.0833333333333333,
+          "obtained": 1.0833333333333333,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "1,08",
+          "obtained": "1,08",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 44,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

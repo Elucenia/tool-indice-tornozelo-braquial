@@ -1,6 +1,15 @@
 [
   {
-    "label": "Braços 130/128, tornozelos 117/140: ITB 0,90 (DAOP leve) e 1,08",
+    "id": "indice-tornozelo-braquial",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Braços 130/128, tornozelos 117/140: ITB 0,90 (DAOP leve) e 1,08",
+    "originalInput": {
+      "bd": 130,
+      "be": 128,
+      "td": 117,
+      "te": 140
+    },
     "input": {
       "bd": 130,
       "be": 128,
@@ -15,16 +24,37 @@
       "tol": 0.001,
       "verdict": "leve"
     },
-    "originalInput": {
-      "bd": 130,
-      "be": 128,
-      "td": 117,
-      "te": 140
+    "recordedResult": {
+      "main": [
+        "0,90",
+        ""
+      ],
+      "label": "ITB (menor dos dois lados)",
+      "raw": {
+        "right": 0.9,
+        "left": 1.0769230769230769
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Tornozelo 180 com braço 120: ITB > 1,40, não compressível",
+    "id": "indice-tornozelo-braquial",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Tornozelo 180 com braço 120: ITB > 1,40, não compressível",
+    "originalInput": {
+      "bd": 120,
+      "be": 120,
+      "td": 180,
+      "te": 130
+    },
     "input": {
       "bd": 120,
       "be": 120,
@@ -35,12 +65,24 @@
       "verdict": "não compressíveis",
       "level": "high"
     },
-    "originalInput": {
-      "bd": 120,
-      "be": 120,
-      "td": 180,
-      "te": 130
+    "recordedResult": {
+      "main": [
+        "1,08",
+        ""
+      ],
+      "label": "ITB (menor dos dois lados)",
+      "raw": {
+        "right": 1.5,
+        "left": 1.0833333333333333
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
