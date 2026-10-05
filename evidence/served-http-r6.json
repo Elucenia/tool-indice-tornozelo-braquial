@@ -1,0 +1,481 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "indice-tornozelo-braquial",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/indice-tornozelo-braquial/calculator.js",
+    "sha256": "547a7ab06ea9a2cc8f61bcb6fa1aa3669009bf91f7f0ededb9f645a698cb80b6",
+    "bytes": 5470
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 2,
+    "replayed": 2,
+    "passed": 2,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "indice-tornozelo-braquial",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Braços 130/128, tornozelos 117/140: ITB 0,90 (DAOP leve) e 1,08",
+      "originalInput": {
+        "bd": 130,
+        "be": 128,
+        "td": 117,
+        "te": 140
+      },
+      "input": {
+        "bd": 130,
+        "be": 128,
+        "td": 117,
+        "te": 140
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "right": 0.9,
+          "left": 1.0769
+        },
+        "tol": 0.001,
+        "verdict": "leve"
+      },
+      "recordedResult": {
+        "main": [
+          "0,90",
+          ""
+        ],
+        "label": "ITB (menor dos dois lados)",
+        "raw": {
+          "right": 0.9,
+          "left": 1.0769230769230769
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/indice-tornozelo-braquial/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "bd": 130,
+            "be": 128,
+            "td": 117,
+            "te": 140
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/indice-tornozelo-braquial/calculate",
+          "startedAt": "2026-10-05T17:38:56.680Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "indice-tornozelo-braquial",
+              "main": [
+                "0,90",
+                ""
+              ],
+              "label": "ITB (menor dos dois lados)",
+              "raw": {
+                "right": 0.9,
+                "left": 1.0769230769230769
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "3b0d363967aad12b416fca1d986817be325379a046cd8b400ab4c7147e48d59b",
+          "bytes": 184,
+          "elapsedMs": 3.9222000000008848
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/indice-tornozelo-braquial/calculate",
+        "startedAt": "2026-10-05T17:38:56.680Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "indice-tornozelo-braquial",
+            "main": [
+              "0,90",
+              ""
+            ],
+            "label": "ITB (menor dos dois lados)",
+            "raw": {
+              "right": 0.9,
+              "left": 1.0769230769230769
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "3b0d363967aad12b416fca1d986817be325379a046cd8b400ab4c7147e48d59b",
+        "bytes": 184,
+        "elapsedMs": 3.9222000000008848
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.right",
+            "expected": 0.9,
+            "obtained": 0.9,
+            "tolerance": 0.001,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.left",
+            "expected": 1.0769,
+            "obtained": 1.0769230769230769,
+            "tolerance": 0.001,
+            "difference": 0.000023076923076903455,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.right",
+            "expected": 0.9,
+            "obtained": 0.9,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.left",
+            "expected": 1.0769230769230769,
+            "obtained": 1.0769230769230769,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "0,90",
+            "obtained": "0,90",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "indice-tornozelo-braquial",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Tornozelo 180 com braço 120: ITB > 1,40, não compressível",
+      "originalInput": {
+        "bd": 120,
+        "be": 120,
+        "td": 180,
+        "te": 130
+      },
+      "input": {
+        "bd": 120,
+        "be": 120,
+        "td": 180,
+        "te": 130
+      },
+      "amendments": [],
+      "expected": {
+        "verdict": "não compressíveis",
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "1,08",
+          ""
+        ],
+        "label": "ITB (menor dos dois lados)",
+        "raw": {
+          "right": 1.5,
+          "left": 1.0833333333333333
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/indice-tornozelo-braquial/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "bd": 120,
+            "be": 120,
+            "td": 180,
+            "te": 130
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/indice-tornozelo-braquial/calculate",
+          "startedAt": "2026-10-05T17:38:56.990Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "indice-tornozelo-braquial",
+              "main": [
+                "1,08",
+                ""
+              ],
+              "label": "ITB (menor dos dois lados)",
+              "raw": {
+                "right": 1.5,
+                "left": 1.0833333333333333
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "44d60c8bc0e02e1ddc0662fc84bf302006ac62f6d3635a63d9045b578e1f4549",
+          "bytes": 184,
+          "elapsedMs": 5.028699999995297
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/indice-tornozelo-braquial/calculate",
+        "startedAt": "2026-10-05T17:38:56.990Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "indice-tornozelo-braquial",
+            "main": [
+              "1,08",
+              ""
+            ],
+            "label": "ITB (menor dos dois lados)",
+            "raw": {
+              "right": 1.5,
+              "left": 1.0833333333333333
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "44d60c8bc0e02e1ddc0662fc84bf302006ac62f6d3635a63d9045b578e1f4549",
+        "bytes": 184,
+        "elapsedMs": 5.028699999995297
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.right",
+            "expected": 1.5,
+            "obtained": 1.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.left",
+            "expected": 1.0833333333333333,
+            "obtained": 1.0833333333333333,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1,08",
+            "obtained": "1,08",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
