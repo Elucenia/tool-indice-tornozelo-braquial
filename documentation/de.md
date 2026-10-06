@@ -79,3 +79,29 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Klassifikation: leichte pAVK
+
+| Ergebnisdetails | |
+| --- | --- |
+| Rechter ABI | 0,90 (leichte pAVK) |
+| Linker ABI | 1,08 (normal) |
+| Verwendeter brachialer Druck | 130 mmHg |
+
+
+### 2
+
+Nicht komprimierbare Arterien auf mindestens einer Seite: den Zehen-Arm-Index verwenden
+
+| Ergebnisdetails | |
+| --- | --- |
+| Rechter ABI | 1,50 (nicht komprimierbar) |
+| Linker ABI | 1,08 (normal) |
+| Verwendeter brachialer Druck | 120 mmHg |
+

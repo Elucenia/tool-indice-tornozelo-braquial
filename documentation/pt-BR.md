@@ -79,3 +79,29 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Classificação: DAOP leve
+
+| Detalhes do resultado | |
+| --- | --- |
+| ITB direito | 0,90 (DAOP leve) |
+| ITB esquerdo | 1,08 (normal) |
+| Pressão braquial usada | 130 mmHg |
+
+
+### 2
+
+Artérias não compressíveis em pelo menos um lado: use o índice hálux-braquial
+
+| Detalhes do resultado | |
+| --- | --- |
+| ITB direito | 1,50 (não compressível) |
+| ITB esquerdo | 1,08 (normal) |
+| Pressão braquial usada | 120 mmHg |
+

@@ -1,0 +1,156 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "indice-tornozelo-braquial",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "65a4cebd25be901d5a9834dfaf30dc4327a29d60",
+    "oldEngineSha256": "547a7ab06ea9a2cc8f61bcb6fa1aa3669009bf91f7f0ededb9f645a698cb80b6",
+    "currentEngineSha256": "865d2e4c8f3fcf015c8fad8cf8efe0745746b550d081b5e9ec134e4635327707"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Braços 130/128, tornozelos 117/140: ITB 0,90 (DAOP leve) e 1,08",
+      "input": {
+        "bd": 130,
+        "be": 128,
+        "td": 117,
+        "te": 140
+      },
+      "publicOutput": {
+        "id": "indice-tornozelo-braquial",
+        "main": [
+          "0,90",
+          ""
+        ],
+        "label": "ITB (menor dos dois lados)",
+        "raw": {
+          "right": 0.9,
+          "left": 1.0769230769230769
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "right": 0.9,
+          "left": 1.0769
+        },
+        "tol": 0.001,
+        "verdict": "leve"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0,90",
+          ""
+        ],
+        "label": "ITB (menor dos dois lados)",
+        "level": "mid",
+        "verdict": "Classificação: DAOP leve",
+        "rows": [
+          [
+            "ITB direito",
+            "0,90 (DAOP leve)"
+          ],
+          [
+            "ITB esquerdo",
+            "1,08 (normal)"
+          ],
+          [
+            "Pressão braquial usada",
+            "130 mmHg"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "right": 0.9,
+          "left": 1.0769230769230769
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Tornozelo 180 com braço 120: ITB > 1,40, não compressível",
+      "input": {
+        "bd": 120,
+        "be": 120,
+        "td": 180,
+        "te": 130
+      },
+      "publicOutput": {
+        "id": "indice-tornozelo-braquial",
+        "main": [
+          "1,08",
+          ""
+        ],
+        "label": "ITB (menor dos dois lados)",
+        "raw": {
+          "right": 1.5,
+          "left": 1.0833333333333333
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "verdict": "não compressíveis",
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1,08",
+          ""
+        ],
+        "label": "ITB (menor dos dois lados)",
+        "level": "high",
+        "verdict": "Artérias não compressíveis em pelo menos um lado: use o índice hálux-braquial",
+        "rows": [
+          [
+            "ITB direito",
+            "1,50 (não compressível)"
+          ],
+          [
+            "ITB esquerdo",
+            "1,08 (normal)"
+          ],
+          [
+            "Pressão braquial usada",
+            "120 mmHg"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "right": 1.5,
+          "left": 1.0833333333333333
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

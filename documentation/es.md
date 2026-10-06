@@ -79,3 +79,29 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Clasificación: EAP leve
+
+| Detalles del resultado | |
+| --- | --- |
+| ITB derecho | 0,90 (EAP leve) |
+| ITB izquierdo | 1,08 (normal) |
+| Presión braquial utilizada | 130 mmHg |
+
+
+### 2
+
+Arterias no compresibles en al menos un lado: use el índice dedo del pie-braquial
+
+| Detalles del resultado | |
+| --- | --- |
+| ITB derecho | 1,50 (no compresible) |
+| ITB izquierdo | 1,08 (normal) |
+| Presión braquial utilizada | 120 mmHg |
+

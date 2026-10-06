@@ -119,7 +119,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "AHA 2012:ITBmaior PAS tornozelo/maior PASbraquial; menor ITB entre pernas",
-    "implementationVersion": "indice-tornozelo-braquial@native-2026-10-03+547a7ab06ea9",
+    "implementationVersion": "indice-tornozelo-braquial@native-2026-10-05+865d2e4c8f3f",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/23159553/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -230,7 +230,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "547a7ab06ea9a2cc8f61bcb6fa1aa3669009bf91f7f0ededb9f645a698cb80b6"
+      "implementationHash": "865d2e4c8f3fcf015c8fad8cf8efe0745746b550d081b5e9ec134e4635327707",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "indice-tornozelo-braquial@native-2026-10-03+547a7ab06ea9",
+          "previousImplementationHash": "547a7ab06ea9a2cc8f61bcb6fa1aa3669009bf91f7f0ededb9f645a698cb80b6",
+          "implementationHash": "865d2e4c8f3fcf015c8fad8cf8efe0745746b550d081b5e9ec134e4635327707",
+          "scientificBodySha256": "ed8904776bfc8547bc70c2c72fcd2e9c556559a7eae9ae0a167d439f10d85794",
+          "metadataContractHash": "d6faf0c550dd00b77c1dc0ba18e6173058c740ce8b59949e40fb704b80182348",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Calcule cada perna com a maior pressão sistólica do tornozelo daquele lado e a maior pressão dos dois braços; não use uma média dessas pressões. Artérias não compressíveis, frequentes em diabetes e doença renal crônica, podem elevar falsamente o índice e exigir avaliação adicional. Um valor de repouso normal não exclui toda isquemia, e o índice isolado pode ser insuficiente na isquemia crônica ameaçadora do membro. A ferramenta não substitui técnica adequada de medida, sintomas, exame vascular ou testes complementares.",
     "limitsEvidence": {
@@ -261,20 +289,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/indice-tornozelo-braquial/calculator.js",
-    "bytes": 5470,
-    "sha256": "547a7ab06ea9a2cc8f61bcb6fa1aa3669009bf91f7f0ededb9f645a698cb80b6"
+    "bytes": 5675,
+    "sha256": "865d2e4c8f3fcf015c8fad8cf8efe0745746b550d081b5e9ec134e4635327707"
   },
-  "sourceToolSha256": "bb69e2d7d9159c7fd36f9146a9b4a5e3b32096a3fecee2bf918b320e43ad9086",
+  "sourceToolSha256": "866f9206d0a5c71dbf52a1daf1b010a4de39db97627fff6cd00f300fdddba6de",
   "omittedFullReferenceBanks": [
     {
       "rows": 2,
       "sha256": "ab85fe908a4f258d11421b4936b8a867384888d29fdf976adf0909020e3e554a",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 2,
       "sha256": "ab85fe908a4f258d11421b4936b8a867384888d29fdf976adf0909020e3e554a",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

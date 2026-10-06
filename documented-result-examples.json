@@ -1,0 +1,1229 @@
+{
+  "id": "indice-tornozelo-braquial",
+  "implementationVersion": "indice-tornozelo-braquial@native-2026-10-05+865d2e4c8f3f",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Braços 130/128, tornozelos 117/140: ITB 0,90 (DAOP leve) e 1,08",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "ITB direito",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,90 (DAOP leve)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ITB esquerdo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,08 (normal)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pressão braquial usada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "130 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Classificação: DAOP leve",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tornozelo 180 com braço 120: ITB > 1,40, não compressível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "ITB direito",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,50 (não compressível)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ITB esquerdo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,08 (normal)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pressão braquial usada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "120 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Artérias não compressíveis em pelo menos um lado: use o índice hálux-braquial",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Braços 130/128, tornozelos 117/140: ITB 0,90 (DAOP leve) e 1,08",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Right ABI",
+                "locale": "en",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "0.90 (mild PAD)",
+                "locale": "en",
+                "template": "documented-authored-cdadb83ad50de7eddd82",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Left ABI",
+                "locale": "en",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "1.08 (normal)",
+                "locale": "en",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Brachial pressure used",
+                "locale": "en",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "130 mmHg",
+                "locale": "en",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  130
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Classification: mild PAD",
+            "locale": "en",
+            "template": "documented-authored-ee20d79538e78cbf8b37"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tornozelo 180 com braço 120: ITB > 1,40, não compressível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Right ABI",
+                "locale": "en",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "1.50 (non-compressible)",
+                "locale": "en",
+                "template": "documented-authored-35190ecccd9979cefe8f",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Left ABI",
+                "locale": "en",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "1.08 (normal)",
+                "locale": "en",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Brachial pressure used",
+                "locale": "en",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "120 mmHg",
+                "locale": "en",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Non-compressible arteries on at least one side: use the toe-brachial index",
+            "locale": "en",
+            "template": "documented-authored-c4006f1e75797547603b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Braços 130/128, tornozelos 117/140: ITB 0,90 (DAOP leve) e 1,08",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "ITB derecho",
+                "locale": "es",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "0,90 (EAP leve)",
+                "locale": "es",
+                "template": "documented-authored-cdadb83ad50de7eddd82",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ITB izquierdo",
+                "locale": "es",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "1,08 (normal)",
+                "locale": "es",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Presión braquial utilizada",
+                "locale": "es",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "130 mmHg",
+                "locale": "es",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  130
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Clasificación: EAP leve",
+            "locale": "es",
+            "template": "documented-authored-ee20d79538e78cbf8b37"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tornozelo 180 com braço 120: ITB > 1,40, não compressível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "ITB derecho",
+                "locale": "es",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "1,50 (no compresible)",
+                "locale": "es",
+                "template": "documented-authored-35190ecccd9979cefe8f",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ITB izquierdo",
+                "locale": "es",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "1,08 (normal)",
+                "locale": "es",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Presión braquial utilizada",
+                "locale": "es",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "120 mmHg",
+                "locale": "es",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Arterias no compresibles en al menos un lado: use el índice dedo del pie-braquial",
+            "locale": "es",
+            "template": "documented-authored-c4006f1e75797547603b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Braços 130/128, tornozelos 117/140: ITB 0,90 (DAOP leve) e 1,08",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IPS droit",
+                "locale": "fr",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "0,90 (AOMI légère)",
+                "locale": "fr",
+                "template": "documented-authored-cdadb83ad50de7eddd82",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "IPS gauche",
+                "locale": "fr",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "1,08 (normal)",
+                "locale": "fr",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pression brachiale utilisée",
+                "locale": "fr",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "130 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  130
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Classification : AOMI légère",
+            "locale": "fr",
+            "template": "documented-authored-ee20d79538e78cbf8b37"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tornozelo 180 com braço 120: ITB > 1,40, não compressível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IPS droit",
+                "locale": "fr",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "1,50 (non compressible)",
+                "locale": "fr",
+                "template": "documented-authored-35190ecccd9979cefe8f",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "IPS gauche",
+                "locale": "fr",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "1,08 (normal)",
+                "locale": "fr",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pression brachiale utilisée",
+                "locale": "fr",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "120 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Artères non compressibles d’au moins un côté : utiliser l’index orteil-brachial",
+            "locale": "fr",
+            "template": "documented-authored-c4006f1e75797547603b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Braços 130/128, tornozelos 117/140: ITB 0,90 (DAOP leve) e 1,08",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rechter ABI",
+                "locale": "de",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "0,90 (leichte pAVK)",
+                "locale": "de",
+                "template": "documented-authored-cdadb83ad50de7eddd82",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Linker ABI",
+                "locale": "de",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "1,08 (normal)",
+                "locale": "de",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Verwendeter brachialer Druck",
+                "locale": "de",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "130 mmHg",
+                "locale": "de",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  130
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Klassifikation: leichte pAVK",
+            "locale": "de",
+            "template": "documented-authored-ee20d79538e78cbf8b37"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tornozelo 180 com braço 120: ITB > 1,40, não compressível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rechter ABI",
+                "locale": "de",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "1,50 (nicht komprimierbar)",
+                "locale": "de",
+                "template": "documented-authored-35190ecccd9979cefe8f",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Linker ABI",
+                "locale": "de",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "1,08 (normal)",
+                "locale": "de",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Verwendeter brachialer Druck",
+                "locale": "de",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "120 mmHg",
+                "locale": "de",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Nicht komprimierbare Arterien auf mindestens einer Seite: den Zehen-Arm-Index verwenden",
+            "locale": "de",
+            "template": "documented-authored-c4006f1e75797547603b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Braços 130/128, tornozelos 117/140: ITB 0,90 (DAOP leve) e 1,08",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "ABI destro",
+                "locale": "it",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "0,90 (arteriopatia periferica lieve)",
+                "locale": "it",
+                "template": "documented-authored-cdadb83ad50de7eddd82",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ABI sinistro",
+                "locale": "it",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "1,08 (normale)",
+                "locale": "it",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pressione brachiale utilizzata",
+                "locale": "it",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "130 mmHg",
+                "locale": "it",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  130
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Classificazione: arteriopatia periferica lieve",
+            "locale": "it",
+            "template": "documented-authored-ee20d79538e78cbf8b37"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tornozelo 180 com braço 120: ITB > 1,40, não compressível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "ABI destro",
+                "locale": "it",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "1,50 (non comprimibile)",
+                "locale": "it",
+                "template": "documented-authored-35190ecccd9979cefe8f",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ABI sinistro",
+                "locale": "it",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "1,08 (normale)",
+                "locale": "it",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pressione brachiale utilizzata",
+                "locale": "it",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "120 mmHg",
+                "locale": "it",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Arterie non comprimibili su almeno un lato: usare l’indice alluce-braccio",
+            "locale": "it",
+            "template": "documented-authored-c4006f1e75797547603b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Braços 130/128, tornozelos 117/140: ITB 0,90 (DAOP leve) e 1,08",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مؤشر الكاحل-العضد الأيمن",
+                "locale": "ar",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "٠٫٩٠ (مرض الشرايين المحيطية خفيف)",
+                "locale": "ar",
+                "template": "documented-authored-cdadb83ad50de7eddd82",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "مؤشر الكاحل-العضد الأيسر",
+                "locale": "ar",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "١٫٠٨ (طبيعي)",
+                "locale": "ar",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الضغط العضدي المستخدم",
+                "locale": "ar",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "١٣٠ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  130
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "التصنيف: مرض الشرايين المحيطية خفيف",
+            "locale": "ar",
+            "template": "documented-authored-ee20d79538e78cbf8b37"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tornozelo 180 com braço 120: ITB > 1,40, não compressível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مؤشر الكاحل-العضد الأيمن",
+                "locale": "ar",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "١٫٥٠ (غير قابل للانضغاط)",
+                "locale": "ar",
+                "template": "documented-authored-35190ecccd9979cefe8f",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "مؤشر الكاحل-العضد الأيسر",
+                "locale": "ar",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "١٫٠٨ (طبيعي)",
+                "locale": "ar",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الضغط العضدي المستخدم",
+                "locale": "ar",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "١٢٠ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "شرايين غير قابلة للانضغاط في جانب واحد على الأقل: استخدم مؤشر إصبع القدم-العضد",
+            "locale": "ar",
+            "template": "documented-authored-c4006f1e75797547603b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Braços 130/128, tornozelos 117/140: ITB 0,90 (DAOP leve) e 1,08",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "右侧 ABI",
+                "locale": "zh",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "0.90（轻度 PAD）",
+                "locale": "zh",
+                "template": "documented-authored-cdadb83ad50de7eddd82",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "左侧 ABI",
+                "locale": "zh",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "1.08（正常）",
+                "locale": "zh",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "所用肱动脉压",
+                "locale": "zh",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "130 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  130
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "分类：轻度 PAD",
+            "locale": "zh",
+            "template": "documented-authored-ee20d79538e78cbf8b37"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tornozelo 180 com braço 120: ITB > 1,40, não compressível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "右侧 ABI",
+                "locale": "zh",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "1.50（不可压缩）",
+                "locale": "zh",
+                "template": "documented-authored-35190ecccd9979cefe8f",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "左侧 ABI",
+                "locale": "zh",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "1.08（正常）",
+                "locale": "zh",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "所用肱动脉压",
+                "locale": "zh",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "120 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "至少一侧动脉不可压缩：使用趾臂指数",
+            "locale": "zh",
+            "template": "documented-authored-c4006f1e75797547603b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Braços 130/128, tornozelos 117/140: ITB 0,90 (DAOP leve) e 1,08",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "右ABI",
+                "locale": "ja",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "0.90（軽度PAD）",
+                "locale": "ja",
+                "template": "documented-authored-cdadb83ad50de7eddd82",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "左ABI",
+                "locale": "ja",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "1.08（正常）",
+                "locale": "ja",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "使用した上腕血圧",
+                "locale": "ja",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "130 mmHg",
+                "locale": "ja",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  130
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "分類：軽度PAD",
+            "locale": "ja",
+            "template": "documented-authored-ee20d79538e78cbf8b37"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tornozelo 180 com braço 120: ITB > 1,40, não compressível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "右ABI",
+                "locale": "ja",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "1.50（非圧縮性）",
+                "locale": "ja",
+                "template": "documented-authored-35190ecccd9979cefe8f",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "左ABI",
+                "locale": "ja",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "1.08（正常）",
+                "locale": "ja",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "使用した上腕血圧",
+                "locale": "ja",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "120 mmHg",
+                "locale": "ja",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "少なくとも片側で動脈が非圧縮性：足趾上腕指数を使用する",
+            "locale": "ja",
+            "template": "documented-authored-c4006f1e75797547603b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Braços 130/128, tornozelos 117/140: ITB 0,90 (DAOP leve) e 1,08",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "दायाँ ABI",
+                "locale": "hi",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "0.90 (हल्का PAD)",
+                "locale": "hi",
+                "template": "documented-authored-cdadb83ad50de7eddd82",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "बायाँ ABI",
+                "locale": "hi",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "1.08 (सामान्य)",
+                "locale": "hi",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "उपयोग किया गया ब्रैकियल दाब",
+                "locale": "hi",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "130 mmHg",
+                "locale": "hi",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  130
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "वर्गीकरण: हल्का PAD",
+            "locale": "hi",
+            "template": "documented-authored-ee20d79538e78cbf8b37"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tornozelo 180 com braço 120: ITB > 1,40, não compressível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "दायाँ ABI",
+                "locale": "hi",
+                "template": "documented-authored-ebb210b9569460ab79e3"
+              },
+              "value": {
+                "text": "1.50 (गैर-संकुचित)",
+                "locale": "hi",
+                "template": "documented-authored-35190ecccd9979cefe8f",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "बायाँ ABI",
+                "locale": "hi",
+                "template": "documented-authored-627c6693fa38392dfc16"
+              },
+              "value": {
+                "text": "1.08 (सामान्य)",
+                "locale": "hi",
+                "template": "documented-authored-cb927b616a1c3b41186d",
+                "sourceNumbers": [
+                  1.08
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "उपयोग किया गया ब्रैकियल दाब",
+                "locale": "hi",
+                "template": "documented-authored-3bea6d0317c0c5f4c21d"
+              },
+              "value": {
+                "text": "120 mmHg",
+                "locale": "hi",
+                "template": "documented-authored-be6ff1aeb0c45365ce40",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "कम से कम एक ओर गैर-संकुचित होने वाली धमनियाँ: टो-ब्रैकियल इंडेक्स का उपयोग करें",
+            "locale": "hi",
+            "template": "documented-authored-c4006f1e75797547603b"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

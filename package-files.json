@@ -1,6 +1,6 @@
 {
   "id": "indice-tornozelo-braquial",
-  "scope": "Exclusive report-owned R6-HTTP-linked candidate, read-only default test",
+  "scope": "Immutable package integrity; tests write no files",
   "files": [
     {
       "path": ".gitattributes",
@@ -24,8 +24,8 @@
     },
     {
       "path": "calculator.browser.js",
-      "bytes": 5470,
-      "sha256": "547a7ab06ea9a2cc8f61bcb6fa1aa3669009bf91f7f0ededb9f645a698cb80b6"
+      "bytes": 5675,
+      "sha256": "865d2e4c8f3fcf015c8fad8cf8efe0745746b550d081b5e9ec134e4635327707"
     },
     {
       "path": "calculator.js",
@@ -39,8 +39,8 @@
     },
     {
       "path": "CODE-COMPONENTS.md",
-      "bytes": 1115,
-      "sha256": "946dc9f4d7afb365a2a46ddaccde25fd424c27aa76a769776544a0861d77eac9"
+      "bytes": 1384,
+      "sha256": "7497fad70147d5469287fa459941c775c3aaf2ddac5ea4c60a9fd56925d61c7d"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,68 +49,78 @@
     },
     {
       "path": "demo-runtime.js",
-      "bytes": 11656,
-      "sha256": "734da1ceff19b961423e1bb5d2c9eaafd18920b32cc4f331856f6065c9cfd2c9"
+      "bytes": 14286,
+      "sha256": "187cb0a3f2693707660f7fc69fc63ce5e30055a5ccdc621cc7945a0d3b1d2918"
     },
     {
       "path": "documentation/ar.md",
-      "bytes": 4676,
-      "sha256": "94550cf9a4f3fbe61db252608c90a52f73dd9baf6482022e1db5500169bc4ea1"
+      "bytes": 5685,
+      "sha256": "4b7558d0ae5645958d895bf6ede94e171bd800e4c404dc8f750e0c0dceef0055"
     },
     {
       "path": "documentation/de.md",
-      "bytes": 3920,
-      "sha256": "bb5b285905f481957378458f688e78794ad8dac176a053b95fe826b649968bd5"
+      "bytes": 4535,
+      "sha256": "2dd46c1f4bee873b871619e4b4a8dc7e914b222815b38f888c62b855a879f2c5"
     },
     {
       "path": "documentation/en.md",
-      "bytes": 3400,
-      "sha256": "2590e4dc2705f26b1b4918a175113c99eb1d25ef514ae71bb945017fc1400246"
+      "bytes": 3951,
+      "sha256": "0e7a5aaf823c0e3d3e340589ad5b0133c0b06ec7b2300af03cf59f7a7b5cdfe8"
     },
     {
       "path": "documentation/es.md",
-      "bytes": 3767,
-      "sha256": "7931d19a39ae364a4b15ca390b588ddbb5aed1f241b586934674d1f7e44b159a"
+      "bytes": 4378,
+      "sha256": "7ea5f18b9df4a3a47a14ee6e185d1885c7b92af4ef2c5aaf1e7fa10efaea676d"
     },
     {
       "path": "documentation/fr.md",
-      "bytes": 4124,
-      "sha256": "cfc9d5760509819b81fa73de6f49483d290c6b1d38b3932335788d0d0018fdcc"
+      "bytes": 4764,
+      "sha256": "3d4063be087cbff7330d394cdd148b91375492cf5e73bff23aef415f0741ffe7"
     },
     {
       "path": "documentation/hi.md",
-      "bytes": 6568,
-      "sha256": "75d28d2c106204deff28003f996a88a8956354cc9c04228b79310a0bfdbf40d6"
+      "bytes": 7736,
+      "sha256": "5b1e9980c7442f101e76448febb201b0546ea660a6879c86438056c8c7b2db5c"
     },
     {
       "path": "documentation/it.md",
-      "bytes": 3756,
-      "sha256": "48e418d90b5202fde28d10ed033c609d242adcc2980417b9266ba9a306e4253b"
+      "bytes": 4403,
+      "sha256": "02896ced54887c09ee136e70ed6cf249035ac43de138cad2d4fe2350c84bbb14"
     },
     {
       "path": "documentation/ja.md",
-      "bytes": 3751,
-      "sha256": "d095151e521fcf7f3823a5f39d674855f36c854b93206b36315caab32a6bd742"
+      "bytes": 4334,
+      "sha256": "9597d0823daabc99b58c6dc6f97298938f96464120071ba572676d5a4d4fb955"
     },
     {
       "path": "documentation/pt-BR.md",
-      "bytes": 3464,
-      "sha256": "53f78ca263f135ba57838474b76dc0409c8526e3da9c228a024fbcfe4c2f6e41"
+      "bytes": 4064,
+      "sha256": "c847b0d201d1016269dfdb8f3820fa8d9b479db36ed077225218223c6b997d33"
     },
     {
       "path": "documentation/zh.md",
-      "bytes": 2930,
-      "sha256": "7665fd5f1dd3e361cf93f2b8d260668fed0871d45ad384c200a6670dde140b25"
+      "bytes": 3414,
+      "sha256": "2a3ead962126e45d7ecf8b8734628b393dc9d53a5d48f65fdfcb2ff6839cc987"
+    },
+    {
+      "path": "documented-result-examples.json",
+      "bytes": 39262,
+      "sha256": "90e4e830d3aeb99e4b36ce504a9c424c52cc6304cd6a1f9755aa0567a18730a6"
     },
     {
       "path": "engine/tool-code/indice-tornozelo-braquial/calculator.js",
-      "bytes": 5470,
-      "sha256": "547a7ab06ea9a2cc8f61bcb6fa1aa3669009bf91f7f0ededb9f645a698cb80b6"
+      "bytes": 5675,
+      "sha256": "865d2e4c8f3fcf015c8fad8cf8efe0745746b550d081b5e9ec134e4635327707"
     },
     {
       "path": "evidence/publication-base-reference.json",
       "bytes": 2827,
       "sha256": "7a461279b30f3d7c4dd876d682873bad0e9cebe9e8332ea9d48bea5b1ed11233"
+    },
+    {
+      "path": "evidence/publication-provenance-before-output-contract.json",
+      "bytes": 12168,
+      "sha256": "53b98eb0fc2f0e7fbe81ff1dcf4a20bac04af38eebcd5f13849fbb9624025011"
     },
     {
       "path": "evidence/served-http-r6.json",
@@ -134,8 +144,8 @@
     },
     {
       "path": "localization.js",
-      "bytes": 46368,
-      "sha256": "be12863638a3491dd4a1d6151a58c9e0b300a1b5d7abcdefa3fac63efb5cbb47"
+      "bytes": 73391,
+      "sha256": "5cb0e4b698bdce8c435a4b5c142ed2becaa146d128f68b7f8ec45dd74d9ca916"
     },
     {
       "path": "METHOD-CODE-LICENSE.txt",
@@ -154,23 +164,23 @@
     },
     {
       "path": "package.json",
-      "bytes": 393,
-      "sha256": "919f00d4dfd9d5cebbb8a9d1dc246d73612e59c7a6da752f7d69b7b6800003ed"
+      "bytes": 487,
+      "sha256": "56930cd70448d867515514b88d5a165324af066c68391b34bca82674f26a7f47"
     },
     {
       "path": "portal-formatters.browser.js",
-      "bytes": 31300,
-      "sha256": "d8522ffe0b858012dfd25e5e8d10fe2eefec977f2bdb612be5cbadf5c4bed9f3"
+      "bytes": 38687,
+      "sha256": "cf0668f6fd44a80a3e4064915cf2da02d2203a9596bd39a9a0a6025fb12e17f4"
     },
     {
       "path": "publication-provenance.json",
-      "bytes": 12168,
-      "sha256": "53b98eb0fc2f0e7fbe81ff1dcf4a20bac04af38eebcd5f13849fbb9624025011"
+      "bytes": 6389,
+      "sha256": "d74bc836c0b3fa05241c524815d72708cf122d459a558be873bd86dcee5132a5"
     },
     {
       "path": "README.md",
-      "bytes": 3197,
-      "sha256": "f0ed1ca7205f594eaa31f1596e5082604d3c51d2dfc9d11afc0ab3d8b2f228c6"
+      "bytes": 3788,
+      "sha256": "b654c8e63f369e34207990c766afe34e8d351cd5604f7511703b414eb8fa1f20"
     },
     {
       "path": "rejections.json",
@@ -188,9 +198,24 @@
       "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
     },
     {
+      "path": "source-result-contract.json",
+      "bytes": 4232,
+      "sha256": "ee15690aa059f04039a3c858ce2000350154d7cfabe6190e1b1988ea8d880a58"
+    },
+    {
       "path": "SOURCE-RIGHTS-REVIEW.md",
       "bytes": 1859,
       "sha256": "06a3cf0bb28763761a90348dbcc79bdad13d64ebc2a82115a0acec2fec5cb8ce"
+    },
+    {
+      "path": "test-presentation-contract.cjs",
+      "bytes": 1923,
+      "sha256": "a4a1734ea3d00c17ffeed7abbd605663459b7c190b695d2396cc58da93215cec"
+    },
+    {
+      "path": "test-source-result-contract.cjs",
+      "bytes": 1416,
+      "sha256": "cbadaf0576ecc2884c7523902880d2068e3a9b6b63df418359ab42219af2e386"
     },
     {
       "path": "test.cjs",
@@ -199,8 +224,8 @@
     },
     {
       "path": "tool.json",
-      "bytes": 11749,
-      "sha256": "e015596b3c6abf05fbd8512e0f4384e31db2d89d8d72310f6e886275b547c9af"
+      "bytes": 13255,
+      "sha256": "15e716203de99f7d835c182401e456426f29735f19f3f2c0696013599af93c47"
     }
   ]
 }

@@ -79,3 +79,29 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Classification: mild PAD
+
+| Result details | |
+| --- | --- |
+| Right ABI | 0.90 (mild PAD) |
+| Left ABI | 1.08 (normal) |
+| Brachial pressure used | 130 mmHg |
+
+
+### 2
+
+Non-compressible arteries on at least one side: use the toe-brachial index
+
+| Result details | |
+| --- | --- |
+| Right ABI | 1.50 (non-compressible) |
+| Left ABI | 1.08 (normal) |
+| Brachial pressure used | 120 mmHg |
+

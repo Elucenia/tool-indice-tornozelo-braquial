@@ -79,3 +79,29 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Classificazione: arteriopatia periferica lieve
+
+| Dettagli del risultato | |
+| --- | --- |
+| ABI destro | 0,90 (arteriopatia periferica lieve) |
+| ABI sinistro | 1,08 (normale) |
+| Pressione brachiale utilizzata | 130 mmHg |
+
+
+### 2
+
+Arterie non comprimibili su almeno un lato: usare l’indice alluce-braccio
+
+| Dettagli del risultato | |
+| --- | --- |
+| ABI destro | 1,50 (non comprimibile) |
+| ABI sinistro | 1,08 (normale) |
+| Pressione brachiale utilizzata | 120 mmHg |
+
